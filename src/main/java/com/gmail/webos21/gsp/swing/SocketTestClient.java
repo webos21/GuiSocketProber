@@ -367,7 +367,8 @@ public class SocketTestClient extends JPanel {
 				socket = factory.createSocket(ip, portNo);
 			}
 
-			socket.setSoTimeout(5000);
+			/* Read Timeout Occurred!!! */
+			// socket.setSoTimeout(5000);
 
 			ipField.setEditable(false);
 			portField.setEditable(false);
