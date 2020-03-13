@@ -15,7 +15,7 @@ public class SocketClient extends Thread {
 	private BufferedInputStream in;
 	private boolean desonnected = false;
 
-	public synchronized void setDesonnected(boolean cr) {
+	public synchronized void setDisonnected(boolean cr) {
 		desonnected = cr;
 	}
 
@@ -23,7 +23,7 @@ public class SocketClient extends Thread {
 		super("SocketClient");
 		this.parent = parent;
 		socket = s;
-		setDesonnected(false);
+		setDisonnected(false);
 		start();
 	}
 
